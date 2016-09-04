@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="#ffffff"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/layoutTop">
+
+        <Button android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/pause"
+                android:textSize="10dp"
+                android:textColor="#ff3976d7"
+                android:background="@drawable/button_circle"
+                android:text="PAUSE"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_centerHorizontal="true"
+                android:textSize="20dp"
+                android:text=""
+                android:layout_marginLeft="100dp"
+                android:textColor="#ff3976d7"
+                android:id="@+id/score"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text=""
+                android:textColor="#ff3976d7"
+                android:id="@+id/VIEW"
+                android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Layout" android:layout_gravity="center_horizontal|top">
+    </LinearLayout>
+
+</FrameLayout>

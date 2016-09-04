@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:orientation="vertical"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_gravity="center"
+                      android:background="#FFFFFF">
+    <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#ff3976d7"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=""
+            android:textSize="40dp"
+            android:id="@+id/score"
+            android:layout_above="@+id/replay"
+            android:layout_centerHorizontal="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="GAME OVER"
+            android:textSize="50dp"
+            android:textColor="#ff3976d7"
+            android:id="@+id/time"
+            android:layout_above="@+id/score"
+            android:layout_centerHorizontal="true"/>
+
+    <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Replay"
+            android:layout_marginTop="10dp"
+            android:id="@+id/replay"
+            android:textSize="20dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#ff3976d7"
+            android:background="@drawable/buttonshape"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+    <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Exit"
+            android:id="@+id/exit"
+            android:textSize="20dp"
+            android:textColor="#ff3976d7"
+            android:background="@drawable/buttonshape"
+            android:layout_below="@+id/replay"
+            android:layout_alignLeft="@+id/replay"/>
+
+
+</RelativeLayout>
